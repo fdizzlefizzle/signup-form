@@ -1,0 +1,20 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
