@@ -1,5 +1,7 @@
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
 
 html {
@@ -17,8 +19,9 @@ body {
     background-image: url("../images/bg-intro-mobile.png");
     background-color: hsl(0, 100%, 74%) ;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Poppins', sans-serif;
+    margin: 50px 25px ;
 }
 
 .overlayx {
@@ -30,12 +33,13 @@ body {
 }
 
 .text-ctr {
-
+    margin: 0 25px;
 }
 
 h1 {
     text-align: center;
-    font: 50px;
+    font-size: 24px;
+    
 }
 
 p {
@@ -46,7 +50,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .try-trial {
@@ -54,9 +57,13 @@ p {
     background-color: hsl(248, 32%, 49%) ;
     border: 1px solid hsl(248, 32%, 49%);
     border-radius: 6px;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 20px 70px;
+    margin: 20px 0;
     width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
 }
 
 .form-ctr {
@@ -67,22 +74,58 @@ p {
     border-radius: 6px;
     align-items: center;
     width: 100%;
-    box-shadow: 0 10px rgba(0, 0, 0, .2);
-    padding: 5px 10px 15px 10px;
+    box-shadow: 0 10px rgba(0, 0, 0, .1);
+    padding: 25px 25px 30px 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-bottom: 25px;
+
 }
 
 .form-fill {
-    margin: 10px;
     padding: 10px 10px;
     width: 100%;
-    color: hsl(249, 10%, 66%);
+    color: hsl(249, 10%, 40%);
     border: 1px solid hsl(246, 25%, 90%);
     border-radius: 4px;
     font-weight: 900;
 }
 
-.form {
-    
+.form-fill:focus {
+    outline: none;}
+
+.error-symbol {
+    position: absolute;
+    height: 20px;
+    right: 25px;
+    top: 10px;
+}
+
+.error-text {
+    color: hsl(0, 100%, 74%) ;
+    font-size: 10px;
+    align-self: flex-end;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-border {
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.myForm {
+    width: 100%;
 }
 
 .claim-trial {
@@ -90,8 +133,11 @@ p {
     background-color: hsl(154, 59%, 51%);
     border: 1px solid hsl(154, 59%, 51%);
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     width: 100%;
+    margin-bottom: 10px; 
+    font-weight: 700;
+    cursor: pointer;
 }
 
 a {
@@ -100,5 +146,9 @@ a {
 }
 
 .bot-text {
-    color: hsl(249, 10%, 26%);
+    color: hsl(249, 10%, 70%);
+    font-size: 11px;
+    text-align: center;
+    margin: 0 20px;
+
 }

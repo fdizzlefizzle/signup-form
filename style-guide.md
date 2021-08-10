@@ -16,7 +16,7 @@ The designs were created to the following widths:
 
 ### Accent
 
-- Blue: hsl(248, 32%, 49%)
+Blue: hsl(248, 32%, 49%)
 
 ### Neutral
 
