@@ -34,7 +34,6 @@ function validateForm() {
         email.nextElementSibling.innerHTML = "Please enter a valid email";
         email.nextElementSibling.classList.remove("hidden");
     }
-    console.log(emailEmpty)    
 }
 
 
